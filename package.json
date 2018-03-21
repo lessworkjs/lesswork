@@ -1,0 +1,32 @@
+{
+  "name": "lesswork",
+  "version": "0.0.5",
+  "description": "A nodejs based framework for AWS serverless applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "sls invoke test",
+    "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/mocha/bin/mocha",
+    "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha ",
+    "dev": "sls offline start --stage=local",
+    "deploy": "sls deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Askedio/lesswork.git"
+  },
+  "keywords": [
+    "nodejs",
+    "serverless",
+    "aws"
+  ],
+  "author": "William Bowman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Askedio/lesswork/issues"
+  },
+  "homepage": "https://github.com/Askedio/lesswork#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "lesswork-framework": "^0.0.9"
+  }
+}

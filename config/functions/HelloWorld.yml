@@ -1,0 +1,11 @@
+helloWorld:
+  handler: app/Http/Controllers/HelloWorld.handle
+  events:
+    - http:
+        path: helloWorld
+        method: get
+        cors: true
+        documentation:
+          description: "Returns Hello World!"
+          tags:
+            - "HelloWorld"
