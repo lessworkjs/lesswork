@@ -11,10 +11,10 @@
 |
 */
 const providers = [
-  'lesswork-framework/providers/AppProvider',
-  'lesswork-framework/providers/RequestProvider',
-  'lesswork-framework/providers/ResponseProvider',
-  'lesswork-framework/providers/EventProvider',
+  'lesswork-framework/Providers/AppProvider',
+  'lesswork-framework/Providers/RequestProvider',
+  'lesswork-framework/Providers/ResponseProvider',
+  'lesswork-framework/Providers/EventProvider',
   //'adonis-redis/providers/RedisFactoryProvider',
   //'adonis-redis/providers/RedisProvider',
   // 'adonis-lucid/providers/DatabaseProvider',
