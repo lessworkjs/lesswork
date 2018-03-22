@@ -1,6 +1,6 @@
 'use strict';
 
-class BaseController extends require('lesswork-framework/Controllers/Controller') {
+class BaseController extends require('lesswork-framework/Controller') {
   setKernel() {
     this.kernel = require('../../../kernel');
   }

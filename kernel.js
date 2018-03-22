@@ -12,7 +12,7 @@ module.exports = function (callback, providers) {
     .then(() => {
       fold.Ioc.aliases(app.aliases);
 
-      use('Helpers').load(path.join(__dirname));
+      use('Helpers').load(__dirname);
 
       use('App').registerGlobals();
 
