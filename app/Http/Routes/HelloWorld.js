@@ -9,5 +9,17 @@ module.exports = {
     app(arguments, function () {
       new HelloWorldController().get();
     });
-  }
+  },
+
+  config: `helloWorld:
+    handler: app/Http/Routes/HelloWorld.get
+    events:
+      - http:
+          path: helloWorld
+          method: get
+          cors: true
+          documentation:
+            description: "Returns Hello World!"
+            tags:
+              - "HelloWorld"`
 };

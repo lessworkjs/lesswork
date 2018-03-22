@@ -13,7 +13,7 @@ plugins:
   - serverless-mocha-plugin
   - serverless-offline  
 
-functions: ${file(./app/Http/Routes/Config/config.js)}
+functions: ${file(./app/Http/Routes/config.js)}
 
 
 custom:
