@@ -14,7 +14,11 @@ describe('helloWorld', () => {
   });
 
   it('should display "Hello World!"', () => {
-    return wrapped.run().then((response) => {
+    return wrapped.run({
+      body: JSON.stringify({
+        test: true
+      })
+    }).then((response) => {
       expect(response).to.not.be.empty;
       assert.equal(typeof response, 'object');
       assert.equal(response.statusCode, '200');
