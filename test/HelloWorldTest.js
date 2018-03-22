@@ -6,7 +6,7 @@ const assert = mochaPlugin.chai.assert;
 
 const Test = require('lesswork-framework/lib/test');
 
-let wrapped = mochaPlugin.getWrapper('helloWorld', '/app/Http/Controllers/HelloWorld', 'handle');
+let wrapped = mochaPlugin.getWrapper('helloWorld', '/app/Http/Controllers/HelloWorld/HelloWorld', 'handle');
 
 describe('helloWorld', () => {
   before((done) => {
