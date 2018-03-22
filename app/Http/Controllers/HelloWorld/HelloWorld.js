@@ -1,9 +1,9 @@
 'use strict';
 
-class HelloWorld extends require('../Controller') {
-  constructor() {
-    super();
+const app = require('../../../../app');
 
+class HelloWorld extends require('../Controller') {
+  get() {
     const responseObject = {
       data: "Hello World!"
     };
@@ -14,12 +14,8 @@ class HelloWorld extends require('../Controller') {
   }
 }
 
-module.exports.handle = function (event, context, callback) {
-  require('../../../../app')({
-    event,
-    context,
-    callback
-  }, () => {
-    new HelloWorld();
+module.exports.get = function (event, context, callback) {
+  app(event, context, callback, function () {
+    new HelloWorld().get();
   });
 };
