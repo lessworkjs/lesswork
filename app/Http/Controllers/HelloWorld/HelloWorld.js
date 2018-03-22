@@ -6,7 +6,7 @@ class HelloWorld extends require('../BaseController') {
       data: "Hello World!"
     };
 
-    use('Response').success(null, responseObject, results => {
+    use('response').success(null, responseObject, results => {
       return results.data;
     }, this.state.callback);
   }

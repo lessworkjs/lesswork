@@ -11,6 +11,7 @@
 |
 */
 const providers = [
+  'lesswork-framework/providers/AppProvider',
   'lesswork-framework/providers/ResponseProvider',
 ];
 
@@ -25,7 +26,8 @@ const providers = [
 |
 */
 const aliases = {
-  Response: 'Lesswork/Response',
+  app: 'Lesswork/App',
+  response: 'Lesswork/Response',
 };
 
 module.exports = {
