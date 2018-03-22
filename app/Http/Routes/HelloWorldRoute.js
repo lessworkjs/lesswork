@@ -12,7 +12,7 @@ module.exports = {
   },
 
   config: `helloWorld:
-    handler: app/Http/Routes/HelloWorld.get
+    handler: app/Http/Routes/HelloWorldRoute.get
     events:
       - http:
           path: helloWorld
