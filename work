@@ -1,24 +1,28 @@
 #!/usr/bin/env node
 
-const work = require('lesswork-cmd');
+require('env-yaml').config();
 
-const Commands = require('lesswork-framework/Console/Kernel');
+require('./kernel')(() => {
+  const work = require('lesswork-cmd');
 
-const AppCommands = require('./app/Console/Kernel');
+  const Commands = require('lesswork-framework/Console/Kernel');
 
-Object.keys(Commands).forEach((name) => {
-  work.addCommand(Commands[name]);
+  const AppCommands = require('./app/Console/Kernel');
+
+  Object.keys(Commands).forEach((name) => {
+    work.addCommand(Commands[name]);
+  });
+
+  Object.keys(AppCommands).forEach((name) => {
+    work.addCommand(AppCommands[name]);
+  });
+
+  work.onError(function (error, commandName) {
+    console.log(`${commandName} reported ${error.message}`);
+    process.exit(1);
+  });
+
+  work.wireUpWithCommander();
+
+  work.invoke();
 });
-
-Object.keys(AppCommands).forEach((name) => {
-  work.addCommand(AppCommands[name]);
-});
-
-work.onError(function (error, commandName) {
-  console.log(`${commandName} reported ${error.message}`);
-  process.exit(1);
-});
-
-work.wireUpWithCommander();
-
-work.invoke();
