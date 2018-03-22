@@ -14,17 +14,15 @@ module.exports = function (callback, providers) {
     .then(() => {
       fold.Ioc.aliases(app.aliases);
 
-      for (let load in packageFile.autoload) {
-        fold.Ioc.autoload(load, path.join(__dirname, packageFile.autoload[load]));
+      if (packageFile.autoload) {
+        for (let load in packageFile.autoload) {
+          fold.Ioc.autoload(load, path.join(__dirname, packageFile.autoload[load]));
+        }
       }
 
       use('Helpers').load(__dirname);
 
       use('App').registerGlobals();
-
-      use('Config').load(path.join(__dirname, './config'));
-
-      use('Env').load(path.join(__dirname, './.env.yml'));
 
       require('./config/events');
 
