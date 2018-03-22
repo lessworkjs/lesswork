@@ -2,19 +2,21 @@
 
 require('env-yaml').config();
 
+const app = require('./config/app');
+
 require('./kernel')(() => {
   const work = require('lesswork-cmd');
 
   const Commands = require('lesswork-framework/Console/Kernel');
 
-  const AppCommands = require('./app/Console/Kernel');
+  const AppCommands = app.commands;
 
   Object.keys(Commands).forEach((name) => {
     work.addCommand(Commands[name]);
   });
 
   Object.keys(AppCommands).forEach((name) => {
-    work.addCommand(AppCommands[name]);
+    work.addCommand(require(AppCommands[name]));
   });
 
   work.onError(function (error, commandName) {
@@ -25,4 +27,4 @@ require('./kernel')(() => {
   work.wireUpWithCommander();
 
   work.invoke();
-});
+}, app.providers.concat(app.workProviders));

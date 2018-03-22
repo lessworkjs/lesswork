@@ -35,11 +35,43 @@ const aliases = {
   Response: 'Lesswork/Response',
   Config: 'Lesswork/Config',
   Helpers: 'Lesswork/Helpers',
+  Env: 'Lesswork/Env',
   // Database: 'Adonis/Src/Database',
   //Redis: 'Adonis/Addons/Redis',
 };
 
+/*
+|--------------------------------------------------------------------------
+| Work Providers
+|--------------------------------------------------------------------------
+|
+| Work providers are specific to work, and are not registered when running routes. It helps in reducing boot time.
+|
+*/
+const workProviders = [
+  //'adonis-lucid/providers/CommandsProvider',
+  //'adonis-lucid/providers/MigrationsProvider',
+  //'adonis-lucid/providers/SchemaProvider',
+  //'adonis-lucid/providers/SeederProvider',
+]
+
+/*
+|--------------------------------------------------------------------------
+| Work Commands
+|--------------------------------------------------------------------------
+|
+| Work Commands are also are registered inside the IoC container. Here we
+| register with Work Kernel using their unique namespace.
+|
+*/
+const commands = {
+  'great': './app/Console/Commands/Greet',
+  // 'migration:refresh': 'adonis-lucid/src/Commands/Refresh'
+}
+
 module.exports = {
   providers,
-  aliases
+  aliases,
+  workProviders,
+  commands
 };

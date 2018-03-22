@@ -17,7 +17,6 @@ class Greet extends Command {
   }) {
     console.log(`Hello ${name}`);
   }
-
 }
 
 module.exports = Greet;

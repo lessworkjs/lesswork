@@ -4,9 +4,11 @@ const fold = require('adonis-fold');
 const path = require('path');
 const app = require('./config/app');
 
-module.exports = function (callback) {
+module.exports = function (callback, providers) {
+  providers = providers || app.providers;
+
   fold.Registrar
-    .register(app.providers)
+    .register(providers)
     .then(() => {
       fold.Ioc.aliases(app.aliases);
 
@@ -15,6 +17,8 @@ module.exports = function (callback) {
       use('App').registerGlobals();
 
       use('Config').load(path.join(__dirname, './config'));
+
+      use('Env').load(path.join(__dirname, './.env.yml'));
 
       callback();
     })
