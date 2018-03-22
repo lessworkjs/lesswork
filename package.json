@@ -27,6 +27,6 @@
   "homepage": "https://github.com/Askedio/lesswork#readme",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.9"
+    "lesswork-framework": "^0.0.10"
   }
 }

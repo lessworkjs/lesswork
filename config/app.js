@@ -24,7 +24,9 @@ const providers = [
 | sweet.
 |
 */
-const aliases = {}
+const aliases = {
+  Response: 'Lesswork/Response',
+}
 
 module.exports = {
   providers,
