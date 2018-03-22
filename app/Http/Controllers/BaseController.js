@@ -1,12 +1,8 @@
 'use strict';
 
 class BaseController {
-  constructor(event, context, callback) {
-    this.setState({
-      event,
-      context,
-      callback
-    });
+  constructor(state) {
+    this.setState(state);
 
     this.loadKernel();
   }

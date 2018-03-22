@@ -13,5 +13,9 @@ class HelloWorld extends require('../BaseController') {
 }
 
 module.exports.handle = function (event, context, callback) {
-  new HelloWorld(event, context, callback);
+  new HelloWorld({
+    event,
+    context,
+    callback
+  });
 };

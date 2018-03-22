@@ -1,18 +1,18 @@
-'use strict'
+'use strict';
 
 /*
 |--------------------------------------------------------------------------
 | Application Providers
 |--------------------------------------------------------------------------
 |
-| Here we configure the providers required to run adonis application. They
+| Here we configure the providers required to run lesswork application. They
 | are registered only once and can be used inside any file using `use`
 | keyword.
 |
 */
 const providers = [
   'lesswork-framework/providers/ResponseProvider',
-]
+];
 
 /*
 |--------------------------------------------------------------------------
@@ -26,9 +26,9 @@ const providers = [
 */
 const aliases = {
   Response: 'Lesswork/Response',
-}
+};
 
 module.exports = {
   providers,
   aliases
-}
+};
