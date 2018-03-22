@@ -13,6 +13,7 @@
 const providers = [
   'lesswork-framework/providers/AppProvider',
   'lesswork-framework/providers/ResponseProvider',
+  'lesswork-framework/providers/EventProvider',
   //'adonis-redis/providers/RedisFactoryProvider',
   //'adonis-redis/providers/RedisProvider',
   // 'adonis-lucid/providers/DatabaseProvider',
@@ -36,6 +37,7 @@ const aliases = {
   Config: 'Lesswork/Config',
   Helpers: 'Lesswork/Helpers',
   Env: 'Lesswork/Env',
+  Event: 'Lesswork/Event',
   // Database: 'Adonis/Src/Database',
   //Redis: 'Adonis/Addons/Redis',
 };

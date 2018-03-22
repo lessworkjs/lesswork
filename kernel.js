@@ -20,6 +20,8 @@ module.exports = function (callback, providers) {
 
       use('Env').load(path.join(__dirname, './.env.yml'));
 
+      require('./events');
+
       callback();
     })
     .catch((error) => console.error(error.stack));
