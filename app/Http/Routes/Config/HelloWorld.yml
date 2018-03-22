@@ -1,5 +1,5 @@
 helloWorld:
-  handler: app/Http/Controllers/HelloWorld/HelloWorld.get
+  handler: app/Http/Routes/HelloWorld.get
   events:
     - http:
         path: helloWorld
