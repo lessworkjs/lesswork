@@ -13,6 +13,9 @@
 const providers = [
   'lesswork-framework/providers/AppProvider',
   'lesswork-framework/providers/ResponseProvider',
+  // 'adonis-lucid/providers/DatabaseProvider',
+  // 'adonis-lucid/providers/LucidProvider',
+  // 'adonis-lucid/providers/FactoryProvider',
 ];
 
 /*
@@ -29,6 +32,8 @@ const aliases = {
   App: 'Lesswork/App',
   Response: 'Lesswork/Response',
   Config: 'Lesswork/Config',
+  // Database: 'Adonis/Src/Database',
+  Helpers: 'Lesswork/Helpers',
 };
 
 module.exports = {

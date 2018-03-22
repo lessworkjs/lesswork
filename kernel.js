@@ -10,6 +10,8 @@ module.exports = function (callback) {
     .then(() => {
       fold.Ioc.aliases(app.aliases);
 
+      use('Helpers').load(path.join(__dirname));
+
       use('App').registerGlobals();
 
       use('Config').load(path.join(__dirname, './config'));
