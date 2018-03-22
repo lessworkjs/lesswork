@@ -3,9 +3,7 @@
 const path = require('path')
 const app = require('./config/app');
 
-const fold = require('adonis-fold')
-
-console.log(__dirname)
+const fold = require('adonis-fold');
 
 module.exports = function (callback) {
   fold.Registrar
@@ -20,11 +18,11 @@ module.exports = function (callback) {
       | providers can be referenced with short sweet names.
       |
       */
-      fold.Ioc.aliases(app.aliases)
+      fold.Ioc.aliases(app.aliases);
 
       if (typeof (callback) === 'function') {
-        callback()
+        callback();
       }
     })
-    .catch((error) => console.error(error.stack))
+    .catch((error) => console.error(error.stack));
 }
