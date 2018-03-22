@@ -20,7 +20,7 @@ module.exports = function (callback, providers) {
 
       use('Env').load(path.join(__dirname, './.env.yml'));
 
-      require('./events');
+      require('./config/events');
 
       callback();
     })

@@ -1,7 +1,9 @@
 'use strict';
 
-const User = exports = module.exports = {};
+class User {
+  registered(user) {
+    console.log('User', user);
+  }
+}
 
-User.registered = function (user) {
-  console.log('User', user);
-};
+module.exports = new User;

@@ -40,6 +40,7 @@ const aliases = {
   Env: 'Lesswork/Env',
   Event: 'Lesswork/Event',
   Request: 'Lesswork/Request',
+  State: 'Lesswork/State',
   //Database: 'Adonis/Src/Database',
   //Redis: 'Adonis/Addons/Redis',
 };

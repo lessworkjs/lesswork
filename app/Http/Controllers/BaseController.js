@@ -1,8 +1,10 @@
 'use strict';
 
+const path = require('path');
+
 class BaseController extends require('lesswork-framework/Controller') {
   setKernel() {
-    this.kernel = require('../../../kernel');
+    this.kernel = path.normalize('../../../kernel');
   }
 }
 

@@ -8,7 +8,7 @@ class HelloWorld extends require('../BaseController') {
 
     response.success(null, responseObject, results => {
       return results.data;
-    }, this.state.callback);
+    }, state.callback());
   }
 }
 
