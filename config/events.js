@@ -17,4 +17,4 @@
 */
 const Event = use('Event')
 
-Event.when('user.registered', 'User.registered')
+// Event.when('user.registered', 'User.registered')
