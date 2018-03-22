@@ -1,5 +1,7 @@
 'use strict'
 
+const Event = use('Event');
+
 /*
 |--------------------------------------------------------------------------
 | Events
@@ -15,6 +17,5 @@
 | Event.when('login', 'User.login')
 |
 */
-const Event = use('Event')
 
 // Event.when('user.registered', 'User.registered')
