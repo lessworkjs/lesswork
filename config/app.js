@@ -28,6 +28,7 @@ const providers = [
 const aliases = {
   App: 'Lesswork/App',
   Response: 'Lesswork/Response',
+  Config: 'Lesswork/Config',
 };
 
 module.exports = {
