@@ -18,7 +18,9 @@ describe('helloWorld', () => {
       expect(response).to.not.be.empty;
       assert.equal(typeof response, 'object');
       assert.equal(response.statusCode, '200');
-      assert.equal(JSON.parse(response.body), 'Hello World!');
+
+      const body = JSON.parse(response.body);
+      assert.equal(body.hello, 'world');
     });
   });
 });

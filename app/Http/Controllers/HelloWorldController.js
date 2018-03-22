@@ -2,7 +2,9 @@
 
 class HelloWorldController extends require('lesswork-framework/Controller') {
   get() {
-    response.success('Hello World!');
+    response.success({
+      hello: 'world'
+    });
   }
 }
 
