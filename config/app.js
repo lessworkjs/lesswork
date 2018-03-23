@@ -15,11 +15,6 @@ const providers = [
   'lesswork-framework/Providers/RequestProvider',
   'lesswork-framework/Providers/ResponseProvider',
   'lesswork-framework/Providers/EventProvider',
-  //'adonis-redis/providers/RedisFactoryProvider',
-  //'adonis-redis/providers/RedisProvider',
-  // 'adonis-lucid/providers/DatabaseProvider',
-  // 'adonis-lucid/providers/LucidProvider',
-  // 'adonis-lucid/providers/FactoryProvider',
 ];
 
 /*
@@ -41,8 +36,8 @@ const aliases = {
   Event: 'Lesswork/Event',
   Request: 'Lesswork/Request',
   State: 'Lesswork/State',
-  //Database: 'Adonis/Src/Database',
-  //Redis: 'Adonis/Addons/Redis',
+  Exception: 'Lesswork/Exception',
+  ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer'
 };
 
 /*
@@ -53,12 +48,7 @@ const aliases = {
 | Work providers are specific to work, and are not registered when running routes. It helps in reducing boot time.
 |
 */
-const workProviders = [
-  //'adonis-lucid/providers/CommandsProvider',
-  //'adonis-lucid/providers/MigrationsProvider',
-  //'adonis-lucid/providers/SchemaProvider',
-  //'adonis-lucid/providers/SeederProvider',
-]
+const workProviders = [];
 
 /*
 |--------------------------------------------------------------------------
@@ -71,8 +61,7 @@ const workProviders = [
 */
 const commands = {
   //'great': './app/Console/Commands/GreetCommand',
-  // 'migration:refresh': 'adonis-lucid/src/Commands/Refresh'
-}
+};
 
 module.exports = {
   providers,

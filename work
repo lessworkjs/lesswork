@@ -3,6 +3,7 @@
 require('env-yaml').config();
 
 const app = require('./config/app');
+const PrettyError = require('pretty-error');
 
 require('./bootstrap/app')({}, () => {
   const work = require('lesswork-cmd');
@@ -20,7 +21,8 @@ require('./bootstrap/app')({}, () => {
   });
 
   work.onError(function (error, commandName) {
-    console.log(`${commandName} reported ${error.message}`);
+    console.error(new PrettyError().render(error));
+
     process.exit(1);
   });
 
