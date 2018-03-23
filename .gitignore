@@ -70,3 +70,4 @@ typings/
 # tmp for dev 
 app/Http/Controllers
 app/Http/Routes
+test
