@@ -70,7 +70,7 @@ const workProviders = [
 |
 */
 const commands = {
-  'great': './app/Console/Commands/GreetCommand',
+  //'great': './app/Console/Commands/GreetCommand',
   // 'migration:refresh': 'adonis-lucid/src/Commands/Refresh'
 }
 

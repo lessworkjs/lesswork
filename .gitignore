@@ -68,3 +68,6 @@ typings/
 .vscode
 
 # tmp for dev 
+app/Http/Controllers
+app/Http/Routes
+test
