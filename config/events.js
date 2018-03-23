@@ -17,5 +17,3 @@ const Event = use('Event');
 | Event.when('login', 'User.login')
 |
 */
-
-// Event.when('user.registered', 'User.registered')
