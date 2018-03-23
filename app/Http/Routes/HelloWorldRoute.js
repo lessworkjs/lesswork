@@ -11,7 +11,7 @@ module.exports = {
     });
   },
 
-  config: `helloWorld:
+  config: `HelloWorld:
     handler: app/Http/Routes/HelloWorldRoute.get
     events:
       - http:

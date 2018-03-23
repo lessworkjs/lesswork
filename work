@@ -4,7 +4,7 @@ require('env-yaml').config();
 
 const app = require('./config/app');
 
-require('./kernel')(() => {
+require('./app')({}, () => {
   const work = require('lesswork-cmd');
 
   const Commands = require('lesswork-framework/Console');

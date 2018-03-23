@@ -4,7 +4,7 @@ const {
   Command
 } = require('lesswork-cmd');
 
-class Greet extends Command {
+class GreetCommand extends Command {
 
   static get signature() {
     return 'greet {name: Name of the user to greet}';
@@ -21,4 +21,4 @@ class Greet extends Command {
   }
 }
 
-module.exports = Greet;
+module.exports = GreetCommand;

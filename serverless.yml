@@ -15,7 +15,6 @@ plugins:
 
 functions: ${file(./functions.js)}
 
-
 custom:
   stage: "${opt:stage, self:provider.stage}"
   region: "${opt:region, self:provider.region}"
@@ -26,8 +25,8 @@ custom:
     api:
       info:
         version: '0.0.1'
-        title: Hello World API
-        description: Hello World API
+        title: Lesswork API
+        description: Lesswork Framework
       tags:
         -
           name: HelloWorld
