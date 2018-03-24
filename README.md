@@ -1,13 +1,20 @@
 # lesswork
-Create and deploy your own AWS serverless application based on the nodejs [lesswork framework](https://github.com/Askedio/lesswork-framework).
-
-# Features
-* Local development with `serverless-offline`.
-* Testing with `mocha` and `serverless-mocha-plugin`.
-* Code coverage with `nyc`.
-* Documentation with `serverless-aws-documentation`.
-* Javascript Environment & JS Configurations.
-
+A nodejs based framework for AWS serverless applications.
 
 # Official Website
 Visit [lesswork.io](https://lesswork.io) for information on how to install and use this framework.
+
+# Goal
+The goal of this framework is to simplify the requirements to successfully build and deploy a nodejs based serverless application on aws.
+
+* Testing
+* Deployment
+* Authorization
+* Commands
+* Responses 
+* Database ORM
+* Configs
+* Environments
+* Documentation
+
+And more...
