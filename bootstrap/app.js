@@ -23,4 +23,4 @@ module.exports = (args, callback) => {
 
     Event.fire('app:end');
   });
-}
+};
