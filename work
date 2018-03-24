@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('env-yaml').config();
+require('dotenv').config();
 
 const app = require('./config/app');
 const PrettyError = require('pretty-error');

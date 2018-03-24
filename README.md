@@ -6,7 +6,7 @@ Create and deploy your own AWS serverless application based on the nodejs [lessw
 * Testing with `mocha` and `serverless-mocha-plugin`.
 * Code coverage with `nyc`.
 * Documentation with `serverless-aws-documentation`.
-* YAML Environment & JS Configurations.
+* Javascript Environment & JS Configurations.
 
 
 # Official Website
