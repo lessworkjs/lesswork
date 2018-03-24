@@ -27,7 +27,7 @@
   "homepage": "https://github.com/lessworkjs/lesswork#readme",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.19"
+    "lesswork-framework": "^0.0.20"
   },
   "autoload": {
     "App": "./app"
