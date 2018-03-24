@@ -1,24 +1,24 @@
 module.exports = {
-  "service": "myApp",
-  "provider": {
-    "name": "aws",
-    "stage": "dev",
-    "profile": "lesswork",
-    "region": "us-west-2",
-    "timeout": 10,
-    "runtime": "nodejs6.10",
-    "environment": "${file(./.env.js)}"
+  service: "myApp",
+  provider: {
+    name: "aws",
+    stage: "dev",
+    profile: "lesswork",
+    region: "us-west-2",
+    timeout: 10,
+    runtime: "nodejs6.10",
+    environment: "${file(./.env.js)}"
   },
-  "plugins": [
+  plugins: [
     "serverless-aws-documentation",
     "serverless-mocha-plugin",
     "serverless-offline"
   ],
-  "functions": "${file(./bootstrap/functions.js)}",
-  "custom": {
-    "stage": "${opt:stage, self:provider.stage}",
-    "region": "${opt:region, self:provider.region}",
-    "aws_rest_path": {
+  functions: "${file(./bootstrap/functions.js)}",
+  custom: {
+    stage: "${opt:stage, self:provider.stage}",
+    region: "${opt:region, self:provider.region}",
+    aws_rest_path: {
       "Fn::Join": [
         "", [
           "/restapis.",
@@ -29,7 +29,7 @@ module.exports = {
         ]
       ]
     },
-    "gw_aws_url": {
+    gw_aws_url: {
       "Fn::Join": [
         "", [
           "https://",
@@ -40,16 +40,16 @@ module.exports = {
         ]
       ]
     },
-    "documentation": {
-      "api": {
-        "info": {
-          "version": "0.0.1",
-          "title": "Lesswork API",
-          "description": "Lesswork Framework"
+    documentation: {
+      api: {
+        info: {
+          version: "0.0.1",
+          title: "Lesswork API",
+          description: "Lesswork Framework"
         },
-        "tags": [{
-          "name": "HelloWorld",
-          "description": "Hello World"
+        tags: [{
+          name: "HelloWorld",
+          description: "Hello World"
         }]
       }
     }

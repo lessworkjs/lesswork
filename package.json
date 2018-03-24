@@ -1,6 +1,6 @@
 {
   "name": "lesswork",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A nodejs based framework for AWS serverless applications.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Askedio/lesswork.git"
+    "url": "git+https://github.com/lessworkjs/lesswork.git"
   },
   "keywords": [
     "nodejs",
@@ -22,12 +22,12 @@
   "author": "William Bowman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Askedio/lesswork/issues"
+    "url": "https://github.com/lessworkjs/lesswork/issues"
   },
-  "homepage": "https://github.com/Askedio/lesswork#readme",
+  "homepage": "https://github.com/lessworkjs/lesswork#readme",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.17"
+    "lesswork-framework": "^0.0.18"
   },
   "autoload": {
     "App": "./app"
