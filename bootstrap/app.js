@@ -13,7 +13,13 @@ module.exports = (args, callback) => {
       callback: args[2]
     });
 
-    callback();
+    if (typeof callback === 'function') {
+      callback();
+    }
+
+    if (typeof callback === 'string') {
+      Route(callback)
+    }
 
     Event.fire('app:end');
   });
