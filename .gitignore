@@ -71,3 +71,4 @@ typings/
 app/Http/Controllers
 app/Http/Routes
 test
+.env.js
