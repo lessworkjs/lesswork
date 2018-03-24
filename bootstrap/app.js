@@ -18,7 +18,7 @@ module.exports = (args, callback) => {
     }
 
     if (typeof callback === 'string') {
-      Route(callback)
+      Route(callback);
     }
 
     Event.fire('app:end');
