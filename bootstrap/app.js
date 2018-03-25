@@ -1,26 +1,13 @@
 'use strict';
 
-const path = require('path');
+module.exports = function (args, callback) {
+  require('lesswork-framework/kernel')(__dirname)(function () {
+    use('Event').fire('app:start');
 
-module.exports = (args, callback) => {
-  require('lesswork-framework/kernel')(path.join(__dirname, '../'))(function () {
-    const Event = use('Event');
-    Event.fire('app:start');
+    use('State').set(args);
 
-    use('State').set({
-      event: args[0],
-      context: args[1],
-      callback: args[2]
-    });
+    use('App').run(callback);
 
-    if (typeof callback === 'function') {
-      callback();
-    }
-
-    if (typeof callback === 'string') {
-      Route(callback);
-    }
-
-    Event.fire('app:end');
+    use('Event').fire('app:end');
   });
 };

@@ -37,7 +37,7 @@ const aliases = {
   Request: 'Lesswork/Request',
   State: 'Lesswork/State',
   Exception: 'Lesswork/Exception',
-  ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer'
+  ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer',
 };
 
 /*
@@ -63,9 +63,17 @@ const commands = {
   //'great': './app/Console/Commands/GreetCommand',
 };
 
+// serverless functions to be autoloaded.
+const functions = [
+  'Http/Routes',
+  'Http/Authentication',
+  'Http/Functions',
+];
+
 module.exports = {
   providers,
   aliases,
   workProviders,
-  commands
+  commands,
+  functions
 };
