@@ -1,5 +1,5 @@
 # lesswork
-A nodejs based framework for AWS serverless applications.
+A nodejs based framework for serverless applications.
 
 # Official Website
 Visit [lesswork.io](https://lesswork.io) for information on how to install and use this framework.
