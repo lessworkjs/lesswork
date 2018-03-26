@@ -37,6 +37,7 @@ const aliases = {
   Request: 'Lesswork/Request',
   State: 'Lesswork/State',
   Exception: 'Lesswork/Exception',
+  Route: 'Lesswork/Route',
   ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer',
 };
 
@@ -48,7 +49,9 @@ const aliases = {
 | Work providers are specific to work, and are not registered when running routes. It helps in reducing boot time.
 |
 */
-const workProviders = [];
+const workProviders = [
+  //
+];
 
 /*
 |--------------------------------------------------------------------------

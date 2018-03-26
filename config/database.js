@@ -10,7 +10,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: env('DB_CONNECTION', 'sqlite'),
+  connection: env('DB_CONNECTION', 'mysql'),
 
   /*
   |--------------------------------------------------------------------------
@@ -45,12 +45,19 @@ module.exports = {
   mysql: {
     client: 'mysql',
     connection: {
-      host: env('DB_HOST', 'localhost'),
-      port: env('DB_PORT', ''),
-      user: env('DB_USER', 'root'),
-      password: env('DB_PASSWORD', ''),
-      database: env('DB_DATABASE', 'adonis')
+      host: env('DB_HOST', '192.168.10.10'),
+      port: env('DB_PORT', '3306'),
+      user: env('DB_USER', 'homestead'),
+      password: env('DB_PASSWORD', 'secret'),
+      database: env('DB_DATABASE', 'test')
     },
+    pool: {
+      min: 2,
+      max: 10,
+      evictionRunIntervalMillis: 30000,
+      numTestsPerEvictionRun: 10,
+    },
+    acquireConnectionTimeout: 10000,
     debug: env('DB_DEBUG', false)
   },
 

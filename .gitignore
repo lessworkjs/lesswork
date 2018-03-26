@@ -67,7 +67,9 @@ typings/
 # VS Code 
 .vscode
 
-# tmp for dev 
+# dev 
+database
+app/Models
 app/Http/Controllers
 app/Http/Routes
 test
