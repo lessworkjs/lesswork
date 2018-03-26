@@ -1,6 +1,6 @@
 {
   "name": "lesswork",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "A nodejs based framework for AWS serverless applications.",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/lessworkjs/lesswork#readme",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.21"
+    "lesswork-framework": "^0.0.22"
   },
   "autoload": {
     "App": "./app"
