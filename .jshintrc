@@ -1,0 +1,22 @@
+{
+  "esversion": 6,
+  "browser": false,
+  "node": true,
+  "-W138": true,
+  "globals": {
+    "App": true,
+    "Helpers": true,
+    "Config": true,
+    "Response": true,
+    "Request": true,
+    "State": true,
+    "EXP": true,
+    "Route": true,
+    "Lintl": true,
+    "use": true,
+    "__": true,
+    "lang": true,
+    "numberFormat": true,
+    "dateFormat": true
+  }
+}
