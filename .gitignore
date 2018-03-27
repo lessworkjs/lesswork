@@ -72,5 +72,6 @@ database
 app/Models
 app/Http/Controllers
 app/Http/Routes
-test
+test/*
 .env.js
+config
