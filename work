@@ -2,10 +2,10 @@
 
 require('lesswork-framework/lib/env');
 
-const app = require('lesswork-framework/lib/app')(process.cwd());
+const Route = require('lesswork-framework/src/Route');
 
 const config = require('./config/app');
 
-app({}, function () {
+Route({}, function () {
   require('lesswork-framework/src/Work')(config);
 }, config.providers.concat(config.workProviders));
