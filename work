@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-require('lesswork-framework/lib/env');
-
 const Route = require('lesswork-framework/src/Route');
 
 const config = require('./config/app');

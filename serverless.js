@@ -14,7 +14,7 @@ module.exports = {
     "serverless-mocha-plugin",
     "serverless-offline"
   ],
-  functions: "${file(./bootstrap/functions.js)}",
+  functions: "${file(./node_modules/lesswork-framework/lib/functions.js)}",
   custom: {
     stage: "${opt:stage, self:provider.stage}",
     region: "${opt:region, self:provider.region}",
