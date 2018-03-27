@@ -96,7 +96,7 @@ module.exports = {
     'lesswork-framework/Providers/RequestProvider',
     'lesswork-framework/Providers/ResponseProvider',
     'lesswork-framework/Providers/EventProvider',
-    'lesswork-framework/Providers/TranslationProvider',
+    'lesswork-framework/Providers/LintlProvider',
   ],
 
   /*
@@ -121,7 +121,7 @@ module.exports = {
     Exception: 'Lesswork/Exception',
     Route: 'Lesswork/Route',
     ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer',
-    Translation: 'Lesswork/Translation',
+    Lintl: 'Lesswork/Lintl',
   },
 
   /*
