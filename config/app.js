@@ -92,11 +92,11 @@ module.exports = {
   |
   */
   providers: [
-    'lesswork-framework/Providers/AppProvider',
-    'lesswork-framework/Providers/RequestProvider',
-    'lesswork-framework/Providers/ResponseProvider',
-    'lesswork-framework/Providers/EventProvider',
-    'lesswork-framework/Providers/LintlProvider',
+    'lesswork-framework/providers/AppProvider',
+    'lesswork-framework/providers/RequestProvider',
+    'lesswork-framework/providers/ResponseProvider',
+    'lesswork-framework/providers/EventProvider',
+    'lesswork-framework/providers/LintlProvider',
   ],
 
   /*

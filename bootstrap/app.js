@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (args, callback) {
-  require('lesswork-framework/kernel')(__dirname)(function () {
+  require('lesswork-framework/lib/kernel')(__dirname)(function () {
     use('Event').fire('app:start');
 
     use('State').set(args);

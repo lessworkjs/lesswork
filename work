@@ -5,5 +5,5 @@ require('lesswork-framework/lib/env');
 const app = require('./config/app');
 
 require('./bootstrap/app')({}, function () {
-  require('lesswork-framework/Work')(app);
+  require('lesswork-framework/src/Work')(app);
 }, app.providers.concat(app.workProviders));
