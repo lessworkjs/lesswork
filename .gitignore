@@ -75,3 +75,6 @@ app/Http/Routes
 test/*
 .env.js
 config
+resources/lang/en-US/messages.js
+
+resources/lang/es-ES/messages.js

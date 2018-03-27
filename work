@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+require('lesswork-framework/lib/env');
+
 const app = require('./config/app');
 
 require('./bootstrap/app')({}, function () {
