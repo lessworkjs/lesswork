@@ -120,7 +120,7 @@ module.exports = {
     State: 'Lesswork/State',
     Exception: 'Lesswork/Exception',
     Route: 'Lesswork/Route',
-    ErrorTransformer: 'lesswork-framework/Transformers/ErrorTransformer',
+    ErrorTransformer: 'lesswork-framework/src/Transformers/ErrorTransformer',
     Lintl: 'Lesswork/Lintl',
   },
 

@@ -44,8 +44,8 @@ module.exports = {
       api: {
         info: {
           version: "0.0.1",
-          title: "Lesswork API",
-          description: "Lesswork Framework"
+          title: "My App",
+          description: "Description"
         },
         tags: [{
           name: "HelloWorld",
