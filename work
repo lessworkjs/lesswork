@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 
+/**
+ * Lesswork Command Line Interface.
+ * 
+ * Provides the local interface for the CLI.
+ * 
+ */
+
 require('lesswork-framework/lib/env');
 
 const Kernel = require('lesswork-framework/src/Route/Kernel');
 
-const config = require('./config/app');
+const appConfig = require('./config/app');
 
 Kernel({}, function () {
-  require('lesswork-framework/src/Work')(config);
-}, config.providers.concat(config.workProviders));
+  require('lesswork-framework/src/Work')(appConfig);
+}, appConfig.providers.concat(appConfig.workProviders));

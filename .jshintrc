@@ -3,6 +3,8 @@
   "browser": false,
   "node": true,
   "-W138": true,
+  "-W124": true,
+  "-W033": true,
   "globals": {
     "App": false,
     "Helpers": false,
@@ -19,6 +21,8 @@
     "dateFormat": false,
     "config": false,
     "env": false,
-    "Env": false
+    "Env": false,
+    "make": false,
+    "response": false
   }
 }
