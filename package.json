@@ -1,12 +1,12 @@
 {
   "name": "lesswork",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A nodejs based framework for serverless applications.",
   "main": "index.js",
   "scripts": {
     "test": "sls invoke test",
-    "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/mocha/bin/mocha",
-    "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha ",
+    "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/mocha/bin/mocha || exit 0",
+    "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha || exit 0",
     "dev": "sls offline start --stage=local",
     "deploy": "sls deploy"
   },
@@ -24,10 +24,10 @@
   "bugs": {
     "url": "https://github.com/lessworkjs/lesswork/issues"
   },
-  "homepage": "https://github.com/lessworkjs/lesswork#readme",
+  "homepage": "https://lesswork.io",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.30"
+    "lesswork-framework": "^0.0.31"
   },
   "autoload": {
     "App": "./app"
