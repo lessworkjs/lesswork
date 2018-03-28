@@ -9,8 +9,9 @@
 
 require('lesswork-framework/lib/env');
 
-const Kernel = require('lesswork-framework/src/Kernel');
+process.env.LESSWORK_CMD = true;
 
+const Kernel = require('lesswork-framework/src/Kernel');
 const appConfig = require('./config/app');
 
 Kernel({}, function () {
