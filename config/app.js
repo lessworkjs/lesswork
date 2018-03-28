@@ -111,19 +111,19 @@ module.exports = {
   |
   */
   aliases: {
-    App: 'Lesswork/App',
-    Response: 'Lesswork/Response',
-    Config: 'Lesswork/Config',
-    Helpers: 'Lesswork/Helpers',
-    Env: 'Lesswork/Env',
-    Event: 'Lesswork/Event',
-    Request: 'Lesswork/Request',
-    State: 'Lesswork/State',
-    Exception: 'Lesswork/Exception',
-    Route: 'Lesswork/Route',
+    App: 'Lesswork/Src/App',
+    Response: 'Lesswork/Src/Response',
+    Config: 'Lesswork/Src/Config',
+    Helpers: 'Lesswork/Src/Helpers',
+    Env: 'Lesswork/Src/Env',
+    Event: 'Lesswork/Src/Event',
+    Request: 'Lesswork/Src/Request',
+    State: 'Lesswork/Src/State',
+    Exception: 'Lesswork/Src/Exception',
+    Route: 'Lesswork/Src/Route',
     ErrorTransformer: 'lesswork-framework/src/Transformers/ErrorTransformer',
-    Lintl: 'Lesswork/Lintl',
-    Middleware: 'Lesswork/Middleware',
+    Lintl: 'Lesswork/Src/Lintl',
+    Middleware: 'Lesswork/Src/Middleware',
   },
 
   /*
