@@ -9,7 +9,7 @@
 
 require('lesswork-framework/lib/env');
 
-const Kernel = require('lesswork-framework/src/Route/Kernel');
+const Kernel = require('lesswork-framework/src/Kernel');
 
 const appConfig = require('./config/app');
 
