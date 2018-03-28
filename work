@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
-const Route = require('lesswork-framework/src/Route');
+require('lesswork-framework/lib/env');
+
+const Kernel = require('lesswork-framework/src/Route/Kernel');
 
 const config = require('./config/app');
 
-Route({}, function () {
+Kernel({}, function () {
   require('lesswork-framework/src/Work')(config);
 }, config.providers.concat(config.workProviders));

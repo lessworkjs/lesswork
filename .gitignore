@@ -71,7 +71,6 @@ typings/
 database
 app/Models
 app/Http/Controllers
-app/Http/Routes
 test/*
 .env.js
 config
