@@ -161,7 +161,7 @@ module.exports = {
   |
   */
   functions: [
-    'Http/Routes',
+    '../routes',
     'Http/Authentication',
     'Http/Functions',
   ],
