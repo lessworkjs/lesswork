@@ -27,7 +27,7 @@
   "homepage": "https://lesswork.io",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.33"
+    "lesswork-framework": "^0.0.34"
   },
   "autoload": {
     "App": "./app"
