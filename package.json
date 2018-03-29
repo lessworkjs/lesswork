@@ -1,12 +1,12 @@
 {
   "name": "lesswork",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A nodejs based framework for serverless applications.",
   "main": "index.js",
   "scripts": {
     "test": "sls invoke test",
-    "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/mocha/bin/mocha || exit 0",
-    "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; ./node_modules/nyc/bin/nyc.js ./node_modules/mocha/bin/mocha || exit 0",
+    "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; mocha \"test/**/*.spec.js\"",
+    "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; nyc --all mocha \"test/**/*.spec.js\"",
     "dev": "sls offline start --stage=local",
     "deploy": "sls deploy"
   },
@@ -27,7 +27,7 @@
   "homepage": "https://lesswork.io",
   "devDependencies": {},
   "dependencies": {
-    "lesswork-framework": "^0.0.35"
+    "lesswork-framework": "^0.0.36"
   },
   "autoload": {
     "App": "./app"
