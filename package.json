@@ -25,9 +25,18 @@
     "url": "https://github.com/lessworkjs/lesswork/issues"
   },
   "homepage": "https://lesswork.io",
-  "devDependencies": {},
+  "devDependencies": {
+    "lesswork-cmd": "^5.0.7",
+    "lesswork-commands": "^1.0.2",
+    "nyc": "^11.6.0",
+    "repl.history": "^0.1.4",
+    "serverless-aws-documentation": "^1.0.1",
+    "serverless-dotenv-plugin": "^1.0.2",
+    "serverless-mocha-plugin": "^1.7.0",
+    "serverless-offline": "^3.18.0"
+  },
   "dependencies": {
-    "lesswork-framework": "^0.0.36"
+    "lesswork-framework": "^0.0.37"
   },
   "autoload": {
     "App": "./app"
