@@ -6,12 +6,12 @@ module.exports = {
     profile: "lesswork",
     region: "us-west-2",
     timeout: 10,
-    runtime: "nodejs6.10",
-    environment: "${file(./.env.js)}"
+    runtime: "nodejs6.10"
   },
   plugins: [
     "serverless-aws-documentation",
     "serverless-mocha-plugin",
+    "serverless-dotenv-plugin",
     "serverless-offline"
   ],
   functions: "${file(./node_modules/lesswork-framework/lib/functions.js)}",
