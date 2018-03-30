@@ -36,7 +36,7 @@
     "serverless-offline": "^3.18.0"
   },
   "dependencies": {
-    "lesswork-framework": "^0.0.37"
+    "lesswork-framework": "^0.0.38"
   },
   "autoload": {
     "App": "./app"
