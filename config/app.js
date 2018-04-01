@@ -94,8 +94,9 @@ module.exports = {
   providers: [
     'lesswork-framework/providers/AppProvider',
     'lesswork-framework/providers/MiddlewareProvider',
-    'lesswork-framework/providers/RequestProvider',
-    'lesswork-framework/providers/ResponseProvider',
+    'lesswork-framework/providers/AwsRequestProvider',
+    'lesswork-framework/providers/AwsResponseProvider',
+    'lesswork-framework/providers/AwsStateProvider',
     'lesswork-framework/providers/EventProvider',
     'lesswork-framework/providers/LintlProvider',
   ],
@@ -112,13 +113,13 @@ module.exports = {
   */
   aliases: {
     App: 'Lesswork/Src/App',
-    Response: 'Lesswork/Src/Response',
+    Response: 'Lesswork/Src/Response/Aws',
     Config: 'Lesswork/Src/Config',
     Helpers: 'Lesswork/Src/Helpers',
     Env: 'Lesswork/Src/Env',
     Event: 'Lesswork/Src/Event',
-    Request: 'Lesswork/Src/Request',
-    State: 'Lesswork/Src/State',
+    Request: 'Lesswork/Src/Request/Aws',
+    State: 'Lesswork/Src/State/Aws',
     Exception: 'Lesswork/Src/Exception',
     Route: 'Lesswork/Src/Route',
     ErrorTransformer: 'lesswork-framework/src/Transformers/ErrorTransformer',

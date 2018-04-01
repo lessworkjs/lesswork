@@ -8,7 +8,9 @@
     "test:local": "export SERVERLESS_TEST_ROOT=`pwd` ; mocha \"test/**/*.spec.js\"",
     "coverage": "export SERVERLESS_TEST_ROOT=`pwd` ; nyc --all mocha \"test/**/*.spec.js\"",
     "dev": "sls offline start --stage=local",
-    "deploy": "sls deploy"
+    "deploy": "sls deploy",
+    "debug:on": "export APP_DEBUG=true && export DEBUG=adonis:framework",
+    "debug:off": "export APP_DEBUG= && export DEBUG="
   },
   "repository": {
     "type": "git",
@@ -36,7 +38,7 @@
     "serverless-offline": "^3.18.0"
   },
   "dependencies": {
-    "lesswork-framework": "^0.0.39"
+    "lesswork-framework": "^0.0.40"
   },
   "autoload": {
     "App": "./app"
