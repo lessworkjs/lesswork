@@ -10,7 +10,8 @@
     "dev": "sls offline start --stage=local",
     "deploy": "sls deploy",
     "debug:on": "export APP_DEBUG=true && export DEBUG=adonis:framework",
-    "debug:off": "export APP_DEBUG= && export DEBUG="
+    "debug:off": "export APP_DEBUG= && export DEBUG=",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,10 @@
   },
   "homepage": "https://lesswork.io",
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "lesswork-cmd": "^5.0.7",
     "lesswork-commands": "^1.0.5",
     "nyc": "^11.6.0",
@@ -38,7 +43,7 @@
     "serverless-offline": "^3.18.0"
   },
   "dependencies": {
-    "lesswork-framework": "^0.0.41"
+    "lesswork-framework": "^0.0.42"
   },
   "autoload": {
     "App": "./app"
