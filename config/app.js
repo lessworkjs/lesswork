@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -93,7 +91,6 @@ module.exports = {
   */
   providers: [
     'lesswork-framework/providers/AppProvider',
-    'lesswork-framework/providers/MiddlewareProvider',
     'lesswork-framework/providers/AwsRequestProvider',
     'lesswork-framework/providers/AwsResponseProvider',
     'lesswork-framework/providers/AwsStateProvider',
@@ -124,7 +121,6 @@ module.exports = {
     Route: 'Lesswork/Src/Route',
     ErrorTransformer: 'lesswork-framework/src/Transformers/ErrorTransformer',
     Lintl: 'Lesswork/Src/Lintl',
-    Middleware: 'Lesswork/Src/Middleware',
   },
 
   /*
@@ -149,7 +145,7 @@ module.exports = {
   |
   */
   commands: {
-    //'great': './app/Console/Commands/GreetCommand',
+    // 'great': './app/Console/Commands/GreetCommand',
   },
 
   /*

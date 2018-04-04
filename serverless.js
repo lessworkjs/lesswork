@@ -6,7 +6,7 @@ module.exports = {
     profile: "lesswork",
     region: "us-west-2",
     timeout: 10,
-    runtime: "nodejs6.10"
+    runtime: "nodejs8.10"
   },
   plugins: [
     "serverless-aws-documentation",

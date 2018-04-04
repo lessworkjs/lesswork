@@ -1,7 +1,3 @@
-'use strict';
-
-const Middleware = use('Middleware');
-
 /*
 |--------------------------------------------------------------------------
 | Global Middleware
@@ -28,5 +24,7 @@ const namedMiddleware = {
   //
 };
 
-Middleware.global(globalMiddleware);
-Middleware.named(namedMiddleware);
+module.exports = {
+  globalMiddleware,
+  namedMiddleware,
+};

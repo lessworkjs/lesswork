@@ -77,3 +77,5 @@ config
 resources/lang/en-US/messages.js
 
 resources/lang/es-ES/messages.js
+
+package-lock.json

@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -26,10 +24,10 @@ module.exports = {
   sqlite: {
     client: 'sqlite3',
     connection: {
-      filename: Helpers.databasePath('development.sqlite')
+      filename: Helpers.databasePath('development.sqlite'),
     },
     useNullAsDefault: true,
-    debug: env('DB_DEBUG', false)
+    debug: env('DB_DEBUG', false),
   },
 
   /*
@@ -49,7 +47,7 @@ module.exports = {
       port: env('DB_PORT', '3306'),
       user: env('DB_USER', 'homestead'),
       password: env('DB_PASSWORD', 'secret'),
-      database: env('DB_DATABASE', 'test')
+      database: env('DB_DATABASE', 'test'),
     },
     pool: {
       min: 2,
@@ -58,7 +56,7 @@ module.exports = {
       numTestsPerEvictionRun: 10,
     },
     acquireConnectionTimeout: 10000,
-    debug: env('DB_DEBUG', false)
+    debug: env('DB_DEBUG', false),
   },
 
   /*
@@ -78,8 +76,8 @@ module.exports = {
       port: env('DB_PORT', ''),
       user: env('DB_USER', 'root'),
       password: env('DB_PASSWORD', ''),
-      database: env('DB_DATABASE', 'adonis')
+      database: env('DB_DATABASE', 'adonis'),
     },
-    debug: env('DB_DEBUG', false)
-  }
-}
+    debug: env('DB_DEBUG', false),
+  },
+};

@@ -1,5 +1,3 @@
-'use strict'
-
 const Event = use('Event');
 
 /*
