@@ -33,7 +33,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "@lesswork/commands": "^1.0.5",
+    "@lessworkjs/commands": "^1.0.5",
     "nyc": "^11.6.0",
     "repl.history": "^0.1.4",
     "serverless-aws-documentation": "^1.0.1",
