@@ -1,5 +1,5 @@
 {
-  "name": "@lesswork/app",
+  "name": "@lessworkjs/app",
   "version": "0.0.15",
   "description": "A nodejs based framework for serverless applications.",
   "main": "index.js",
@@ -42,7 +42,7 @@
     "serverless-offline": "^3.18.0"
   },
   "dependencies": {
-    "@lesswork/framework": "0.0.x"
+    "@lessworkjs/framework": "0.0.x"
   },
   "autoload": {
     "App": "./app"
