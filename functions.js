@@ -1,0 +1,1 @@
+module.exports = require('@lessworkjs/framework/lib/functions.js');
