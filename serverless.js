@@ -14,7 +14,7 @@ module.exports = {
     "serverless-dotenv-plugin",
     "serverless-offline"
   ],
-  functions: "${file(./node_modules/lesswork-framework/lib/functions.js)}",
+  functions: "${file(./node_modules/@lessworkjs/framework/lib/functions.js)}",
   custom: {
     stage: "${opt:stage, self:provider.stage}",
     region: "${opt:region, self:provider.region}",

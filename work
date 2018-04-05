@@ -2,16 +2,16 @@
 
 /**
  * Lesswork Command Line Interface.
- * 
+ *
  * Provides the local interface for the CLI.
- * 
+ *
  */
 
-require('lesswork-framework/lib/env');
+require('@lessworkjs/framework/lib/env');
 
-const Kernel = require('lesswork-framework/src/Kernel');
+const Kernel = require('@lessworkjs/framework/src/Kernel');
 const appConfig = require('./config/app');
 
-new Kernel().handle(function () {
-  require('lesswork-framework/src/Work')(appConfig);
+new Kernel().handle(() => {
+  require('@lessworkjs/framework/src/Work')(appConfig);
 }, appConfig.providers.concat(appConfig.workProviders));
